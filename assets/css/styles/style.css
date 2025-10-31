@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* https://coolors.co/0a1128-001f54-034078-1282a2-fefcfb */
+:root {
+    --primary: #023C40;
+
+    --secondary: #028090;
+    --tertiary: #114B5F;
+    --tertiaryDark: #087E8B;
+    --secondaryDark: #004BA8;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--primary);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
