@@ -39,8 +39,9 @@ h2 {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
     position: sticky;
     top: 0;
     justify-content: space-between;
@@ -48,12 +49,19 @@ header {
     align-items: center;
     border-bottom: 0.1rem solid black;
     background: var(--primary);
+    opacity: 0.95;
 }
 
 header img {
     background: white;
     padding: 1rem 0.5rem;
     border-radius: 10%;
+
+    grid-column: 1 / 2;
+}
+
+header nav {
+    grid-column: 2 / 7;
 }
 
 header nav ul {
@@ -80,6 +88,8 @@ header nav ul li {
 header div {
     display: flex;
     gap: 1rem;
+
+    grid-column: 7 / 8;
 }
 
 .sign_login {
@@ -91,7 +101,6 @@ header div {
     color: #fefefe;
     font-weight: bold;
     font-size: 1rem;
-
 
 }
 .sign_login:hover {
@@ -175,6 +184,12 @@ header div {
     justify-content: space-between;
     margin: 0 3rem;
     height: 100%;
+
+    :hover {
+        transition: 1s;
+        background: #29aab6;
+
+    }
 }
 
 .funciona ol li {
@@ -209,6 +224,7 @@ header div {
     article {
         background-color: white;
         border-radius: 1rem;
+        padding: 0.5rem;
     }
 
     article h3, p {
@@ -269,9 +285,10 @@ header div {
     }
 
     article:nth-child(5) {
-        grid-column: 1 / 4;
-        grid-row: 3 / 4;
+        width: 200%;
+        justify-self: center;
 
+        grid-column: 2 / 3;
         background-color: #E7FFAC;
         color: #7aab02;
     }
@@ -317,4 +334,27 @@ article:hover{
 .testimonios article p {
     text-align: center;
     padding: 1rem 0 0 0;
+}
+
+.testimonios__lista {
+    display: flex;
+    padding-left: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+
+}
+.testimonios__lista--articulo {
+    list-style-type: none;
+    flex: 0 0 100%;
+    padding-top: 20px;
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+.recordatorio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
