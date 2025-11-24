@@ -50,6 +50,7 @@ header {
     border-bottom: 0.1rem solid black;
     background: var(--primary);
     opacity: 0.95;
+    z-index: 1;
 }
 
 header img {
@@ -245,10 +246,16 @@ header div {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
 
+        transition: 0.3s ease-in-out;
         h3 {
             border-right: 0.3rem solid var(--tertiary);
             height: 75%;
         }
+    }
+
+    article:nth-child(1):hover {
+        transition: 0.3s ease-in-out;
+        transform: translateY(-5%);
     }
 
     article:nth-child(2) {
@@ -257,6 +264,13 @@ header div {
 
         background-color: #C4FAF8;
         color: #00cec6;
+
+        transition: 0.3s ease-in-out;
+    }
+
+    article:nth-child(2):hover {
+        transition: 0.3s ease-in-out;
+        transform: translateY(-5%);
     }
 
     article:nth-child(3) {
@@ -265,6 +279,13 @@ header div {
 
         background-color: #97A2FF;
         color: #0319cc;
+
+        transition: 0.3s ease-in-out;
+    }
+
+    article:nth-child(3):hover {
+        transition: 0.3s ease-in-out;
+        transform: translateY(-5%);
     }
 
     article:nth-child(4) {
@@ -278,10 +299,17 @@ header div {
         background-color: #FFABAb;
         color: #be0202;
 
+        transition: 0.3s ease-in-out;
+
         h3 {
             border-left: 0.3rem solid var(--tertiary);
             height: 75%;
         }
+    }
+
+    article:nth-child(4):hover {
+        transition: 0.3s ease-in-out;
+        transform: translateY(-5%);
     }
 
     article:nth-child(5) {
@@ -291,6 +319,13 @@ header div {
         grid-column: 2 / 3;
         background-color: #E7FFAC;
         color: #7aab02;
+
+        transition: 0.3s ease-in-out;
+    }
+
+    article:nth-child(5):hover {
+        transition: 0.3s ease-in-out;
+        transform: translateY(-5%);
     }
 }
 
@@ -357,4 +392,40 @@ article:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.footer {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 15rem;
+
+    justify-content: center;
+
+    background-color: #f1f1f1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer__redes {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__redes ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer__redes--text {
+    width: 300px;
+}
+
+.footer__info {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer__info div ul li {
+    padding: 0.3rem 0;
 }
