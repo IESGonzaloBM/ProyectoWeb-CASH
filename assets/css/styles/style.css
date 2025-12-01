@@ -39,18 +39,20 @@ h2 {
 }
 
 header {
+    margin: 1rem 1rem;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr;
     position: sticky;
-    top: 0;
+    top: 15px;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 0.1rem 0.1rem;
     align-items: center;
-    border-bottom: 0.1rem solid black;
     background: var(--primary);
     opacity: 0.95;
     z-index: 1;
+    border-radius: 5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 header img {
@@ -72,11 +74,13 @@ header nav ul {
     justify-content: center;
     left: 100px;
     gap: 3rem;
+
 }
 
 header nav ul li {
     color: red;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 
     a:link {
         color: white;
@@ -388,10 +392,53 @@ article:hover{
 }
 
 .recordatorio {
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    background-color: #f1f1f1;
+}
+
+.recordatorio:hover {
+    .recordatorio {
+        padding: 5rem 0;
+    }
+
+    .recordatorio__frase {
+        transform: translateY(-2rem);
+        background-color: transparent;
+    }
+
+    .recordatorio__mask {
+        z-index: 1;
+        transform: translateY(4rem);
+        opacity: 100;
+    }
+}
+
+.recordatorio__frase {
+    transition: ease-out 0.5s;
+}
+
+.recordatorio__mask {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    z-index: -1;
+    transition: ease-out 0.5s;
+    opacity: 0;
+}
+
+.recordatorio h2 {
+    font-size: 4rem;
+}
+
+.recordatorio h3 {
+    font-size: 2rem;
 }
 
 .footer {
