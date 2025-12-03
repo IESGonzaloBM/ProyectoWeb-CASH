@@ -49,7 +49,7 @@ h2 {
     padding: 0.5rem 2rem;
     align-items: center;
     background: var(--primary);
-    opacity: 0.95;
+    opacity: 0.97;
     z-index: 1;
     border-radius: 5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -503,9 +503,36 @@ article:hover{
 }
 
 
+.staff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.staff__ceo, .staff__cmo, .staff__seo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff article h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.staff__ceo p, .staff__cmo p, .staff__seo p {
 
 
 
+
+}
+
+.staff__seo img {
+
+
+}
 
 
 .footer {
