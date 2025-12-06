@@ -3,145 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASH | Contacto</title>
-    <meta name="description" content="Ponte en contacto con el equipo de CASH. Resolvemos tus dudas, incidencias y sugerencias de forma rápida y segura.">
-    <link rel="icon" href="contacto.html" type="image/png">
+    <title>CASH</title>
+    <meta name="description" content="CASH es una plataforma digital que simplifica tus finanzas. Controla tus gastos, automatiza tus ahorros y accede a planes personalizados.">
+    <link rel="icon" href="assets/images/cash.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles/style.css">
 </head>
 <body>
-<nav>
-    <img src="assets/images/cash.png" alt="cash" width="100" height="100">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="about.html">Nosotros</a></li>
-    </ul>
-    <div>
-        <button>Sign In</button>
-        <button>Login In</button>
-    </div>
-</nav>
+    <header class="cabecera">
+        <a href="index.html" class="cabecera__logo"><img src="assets/images/cash.png" alt="cash" width="100"></a>
+        <nav class="cabecera__navegador">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <section class="cabecera__botones">
+            <button class="sign_login">Sign In</button>
+            <button class="sign_login">Login In</button>
+        </section>
+    </header>
 
-<header>
-    <h1>Contáctanos</h1>
-    <h2>Ponte en contacto con nuestro equipo</h2>
-</header>
-
-<main>
-    <section>
+    <main class="contacto">
         <h2>Nuestras ventajas</h2>
-        <article>
-            <img src="assets/images/24_7.png" alt="24_7" height="50" width="100"/>
-            <h3>Asistencia rápida 24/7</h3>
-            <p>Estamos disponibles en todo momento para resolver tus dudas, incidencias o consultas sobre nuestros servicios.</p>
-        </article>
-        <article>
-            <img src="assets/images/seguridad.png" alt="seguridad" height="80" width="80"/>
-            <h3>Privacidad total</h3>
-            <p>Tu información está completamente protegida. Cumplimos con las normativas GDPR y garantizamos confidencialidad total.</p>
-        </article>
-    </section>
+        <section class="contacto__ventanjas">
+            
+            <article class="ventajas__asistencia">
+                <img src="assets/images/24_7.png" alt="24_7" height="50" width="100"/>
+                <h3>Asistencia rápida 24/7</h3>
+                <p>Estamos disponibles en todo momento para resolver tus dudas, incidencias o consultas sobre nuestros servicios.</p>
+            </article>
+            <article class="ventajas__privacidad">
+                <img src="assets/images/seguridad.png" alt="seguridad" height="80" width="80"/>
+                <h3>Privacidad total</h3>
+                <p>Tu información está completamente protegida. Cumplimos con las normativas GDPR y garantizamos confidencialidad total.</p>
+            </article>
+        </section>
 
-    <section>
-        <h2>Formulario de contacto</h2>
-        <form name="contacto" action="#" method="POST">
-            <fieldset>
-                <legend>Datos personales</legend>
+        <section class="contacto__info">
+            <h2 id="temas">Temas de contacto</h2>
+            <article class="info__sugerencia">
+                <img src="assets/images/sugerencias.png" alt="sugerencias" height="100" width="100"/>
+                <h3>Sugerencia</h3>
+                <p>¿Tienes una idea para mejorar la plataforma? Envíanos tus propuestas y las revisaremos encantados.</p>
+            </article>
+            <article class="info__tecnico">
+                <img src="assets/images/tecnico.png" alt="tecnico" height="106" width="106"/>
+                <h3>Problemas técnicos</h3>
+                <p>Si detectas algún fallo o error en nuestros servicios, notifícalo y te ayudaremos lo antes posible.</p>
+            </article>
+            <article class="info__denuncia">
+                <img src="assets/images/denuncia.png" alt="denuncia" height="120" width="120"/>
+                <h3>Denuncia</h3>
+                <p>Si crees que alguien está haciendo un uso indebido de CASH, puedes informarnos de forma confidencial.</p>
+            </article>
+        </section>
+        
+        <section class="contacto__form">
+            <h2>Formulario de contacto</h2>
+            <form name="form" action="#" method="POST">
+                <fieldset>
+                    <legend>Datos personales</legend>
+    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+    
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com" required>
+    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+    
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha_nacimiento">
+    
+                    <div>
+                        <span>Género:</span>
+                        <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+                        <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Motivo del contacto</legend>
+    
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="problema_tecnico">Problema técnico</option>
+                        <option value="denuncia">Denuncia</option>
+                        <option value="otros">Otros</option>
+                    </select>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <footer class="footer">
+        <section class="footer__redes">
+            <a href="index.html"><img src="assets/images/cash.png" alt="cash" width="125"></a>
+            <ul>
+                <li><a href="#"><img src="assets/images/icons/icons8-instagram-50.png" alt="Instagram" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-facebook-50.png" alt="Facebook" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-x-50.png" alt="X" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-linkedin-50.png" alt="LinkedIn" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-youtube-50.png" alt="YouTube" width="25"></a></li>
+            </ul>
+            <article class="footer__redes--text">
+                <span>&copy; 2025 CASH S.A.</span>
+                <span>Gonzalo Blanco Mosteiro | 1º DAW</span>
+                <span>Lenguaje de Marcas</span>
+            </article>
+        </section>
 
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+        <section class="footer__info">
+            <article>
+                <h4>Recursos</h4>
+                <ul class="info__nav">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                </ul>
+            </article>
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com" required>
+            <article>
+                <h4>Politica</h4>
+                <ul class="info__burocracia">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Configuración de cookies</a></li>
+                </ul>
+            </article>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
-
-                <label for="fecha">Fecha de nacimiento:</label>
-                <input type="date" id="fecha" name="fecha_nacimiento">
-
-                <div>
-                    <span>Género:</span>
-                    <label><input type="radio" name="genero" value="hombre"> Hombre</label>
-                    <label><input type="radio" name="genero" value="mujer"> Mujer</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Motivo del contacto</legend>
-
-                <label for="asunto">Asunto:</label>
-                <select id="asunto" name="asunto" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="problema_tecnico">Problema técnico</option>
-                    <option value="denuncia">Denuncia</option>
-                    <option value="otros">Otros</option>
-                </select>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
-
-                <button type="submit">Enviar mensaje</button>
-            </fieldset>
-        </form>
-    </section>
-
-    <section>
-        <h2 id="temas">Temas de contacto</h2>
-        <article>
-            <img src="assets/images/sugerencias.png" alt="sugerencias" height="100" width="100"/>
-            <h3>Sugerencia</h3>
-            <p>¿Tienes una idea para mejorar la plataforma? Envíanos tus propuestas y las revisaremos encantados.</p>
-        </article>
-        <article>
-            <img src="assets/images/tecnico.png" alt="tecnico" height="106" width="106"/>
-            <h3>Problemas técnicos</h3>
-            <p>Si detectas algún fallo o error en nuestros servicios, notifícalo y te ayudaremos lo antes posible.</p>
-        </article>
-        <article>
-            <img src="assets/images/denuncia.png" alt="denuncia" height="120" width="120"/>
-            <h3>Denuncia</h3>
-            <p>Si crees que alguien está haciendo un uso indebido de CASH, puedes informarnos de forma confidencial.</p>
-        </article>
-    </section>
-</main>
-
-<footer>
-    <hr>
-    <div>
-        <img src="assets/images/cash.png" alt="cash" width="100">        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">YouTube</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="FAQ.html">Preguntas frecuentes</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="about.html">Nosotros</a></li>
-        </ul>
-
-        <ul>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos de uso</a></li>
-            <li><a href="#">Aviso legal</a></li>
-            <li><a href="#">Configuración de cookies</a></li>
-        </ul>
-    </div>
-
-    <p>&copy; 2025 CASH S.A. | Desarrollado por Gonzalo Blanco Mosteiro — 1º DAW | Lenguaje de Marcas</p>
-</footer>
+            <article>
+                <h4>Comunidad</h4>
+                <ul class="info__burocracia">
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Normativa</a></li>
+                    <li><a href="#">Grupos de ayuda</a></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
 </body>
 </html>
