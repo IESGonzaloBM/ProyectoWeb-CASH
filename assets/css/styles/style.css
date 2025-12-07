@@ -1349,6 +1349,264 @@ fieldset div span {
 
 
 
+/* ESTRUCTURA GENERAL DE SERVICIOS */
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.servicios h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    padding: 3rem;
+}
+
+/* SECCIÓN DE CARDS (PLANES) */
+.servicios__card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 10rem 2rem 10rem;
+    align-items: stretch;
+}
+
+.servicios__card article {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicios__card article:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.servicios__card img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    align-self: center;
+    padding-bottom: 1rem;
+}
+
+.servicios__card h2 {
+    font-size: 1.75rem;
+    color: var(--primary);
+    padding: 0.5rem 0;
+}
+
+.servicios__card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+    padding-bottom: 1rem;
+}
+
+.servicios__card article > p {
+    font-size: 0.9375rem;
+    color: #495057;
+    line-height: 1.5;
+    /* Asegura que el texto ocupe un espacio consistente */
+    min-height: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+.servicios__card hr {
+    border: none;
+    border-top: 0.0625rem solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+.servicios__card ul {
+    text-align: left;
+    padding: 0 0 1.5rem 0.5rem;
+    flex-grow: 1; /* Permite que la lista crezca y alinee los botones */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.servicios__card ul li {
+    font-size: 0.9375rem;
+    color: var(--tertiary);
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.servicios__card button,
+.servicios__card a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--secondary);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.servicios__card button:hover,
+.servicios__card a:hover {
+    background-color: var(--secondaryDark);
+}
+
+/* Estilos específicos para destacar un plan (ej: Professional) */
+.card__professional {
+    border: 0.1875rem solid var(--secondary);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card__professional:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+/* SECCIÓN DE TABLA COMPARATIVA */
+.servicios__tabla {
+    padding: 4rem 10rem;
+    background-color: #f1f1f1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.servicios__tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.servicios__tabla thead tr {
+    background-color: var(--primary);
+    color: white;
+}
+
+.servicios__tabla th {
+    padding: 1rem 0.5rem;
+    font-weight: 600;
+}
+
+.servicios__tabla tbody tr {
+    border-bottom: 0.0625rem solid #e0e0e0;
+}
+
+.servicios__tabla tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.servicios__tabla td {
+    padding: 1rem 0.5rem;
+    font-size: 0.9375rem;
+    color: #495057;
+}
+
+.servicios__tabla tbody tr:last-child {
+    background-color: #ffffff;
+}
+
+.servicios__tabla td button,
+.servicios__tabla td a {
+    width: 90%;
+    padding: 0.75rem;
+    font-size: 0.9375rem;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.servicios__tabla td button:hover,
+.servicios__tabla td a:hover {
+    background-color: var(--secondaryDark);
+}
+
+
+
+
+/* SECCIÓN "¿POR QUÉ ELEGIRNOS?" */
+.servicios__faq {
+    padding: 3rem 10rem;
+}
+
+.servicios__faq ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.servicios__faq ul li {
+    font-size: 1rem;
+    color: var(--primary);
+    background-color: #f4f8fb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    list-style: none;
+    text-align: left;
+    border-left: 0.3125rem solid var(--secondary);
+}
+
+.servicios__faq ul li a {
+    color: var(--secondaryDark);
+    text-decoration: underline;
+}
+
+/* SECCIÓN "COMUNIDAD & BLOG" */
+.servicios__blog {
+    text-align: center;
+    padding: 2rem 10rem;
+    border-radius: 0.75rem;
+
+    background-color: #f1f1f1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.servicios__blog p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057;
+    padding: 1rem;
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.servicios__blog a {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--tertiary);
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.servicios__blog a:hover {
+    background-color: var(--secondaryDark);
+}
+
+
+
+
 
 
 
