@@ -3,226 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASH | Blog</title>
-    <meta name="description" content="Mantente al día con las últimas noticias, lanzamientos y mejoras de CASH. Descubre cómo nuestro equipo trabaja para ofrecerte las mejores soluciones financieras.">
-    <link rel="icon" href="blog.html" type="image/png">
+    <title>CASH</title>
+    <meta name="description" content="CASH es una plataforma digital que simplifica tus finanzas. Controla tus gastos, automatiza tus ahorros y accede a planes personalizados.">
+    <link rel="icon" href="assets/images/cash.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles/style.css">
 </head>
 <body>
-<nav>
-    <img src="assets/images/cash.png" alt="cash" width="100" height="100">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="about.html">Nosotros</a></li>
-    </ul>
-    <div>
-        <button>Sign In</button>
-        <button>Login In</button>
-    </div>
-</nav>
-
-<header>
-    <h1>Blog</h1>
-    <h2>Las últimas novedades de nuestros equipos</h2>
-</header>
-
-<main>
-    <section>
-        <h2>Último post destacado</h2>
-        <article>
-            <img src="assets/images/portada_cmo.png" alt="portada_cmo" height="268" width="648"/>
-            <div>
-                <div>
-                    <img src="assets/images/cmo.png" alt="cmo" height="51" width="37"/>
-                    <h4>CMO | Marta Garcia</h4>
+    <header class="cabecera">
+        <a href="index.html" class="cabecera__logo"><img src="assets/images/cash.png" alt="cash" width="100"></a>
+        <nav class="cabecera__navegador">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <section class="cabecera__botones">
+            <button class="sign_login">Sign In</button>
+            <button class="sign_login">Login In</button>
+        </section>
+    </header>
+    
+    <main class="newsletter">
+        <section class="destacado">
+            <h2>Último post destacado</h2>
+            <article>
+                <img src="assets/images/portada_cmo.png" alt="portada_cmo" height="268" width="648"/>
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/cmo.png" alt="cmo" height="51" width="37"/>
+                        <h4>CMO | Marta Garcia</h4>
+                    </div>
+                    <h3>Reorganización estructural de la web</h3>
+                    <time datetime="2025-10-30">30 de octubre de 2025</time>
+                    <p><strong>Categoría:</strong> Diseño & Estructura</p>
                 </div>
-                <h3>Reorganización estructural de la web</h3>
-                <time datetime="2025-10-30">30 de octubre de 2025</time>
-                <p><strong>Categoría:</strong> Diseño & Estructura</p>
-            </div>
-            <p>
-                CASH renueva por completo su estructura interna para mejorar el rendimiento y la accesibilidad del portal.
-                El nuevo diseño ofrece una navegación más fluida, integración de IA en el panel de usuario y optimización para dispositivos móviles.
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Equipo Directivo</h2>
-        <button>Suscribirse al boletín</button>
-        <article>
-            <img src="assets/images/portada_cmo.png" alt="portada_cmo" height="268" width="648"/>
-            <div>
-                <div>
-                    <img src="assets/images/cmo.png" alt="cmo" height="51" width="37"/>
-                    <h4>CMO | Marta Garcia</h4>
+                <p>
+                    CASH renueva por completo su estructura interna para mejorar el rendimiento y la accesibilidad del portal.
+                    El nuevo diseño ofrece una navegación más fluida, integración de IA en el panel de usuario y optimización para dispositivos móviles.
+                </p>
+            </article>
+        </section>
+    
+        <section class="directivos">
+            <section class="directivos__header">
+                <h2>Equipo Directivo</h2>
+                <button>Suscribirse al boletín</button>
+            </section>
+            
+            <article class="directivos__post">
+                <img src="assets/images/portada_cmo.png" alt="portada_cmo" height="268" width="648"/>
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/cmo.png" alt="cmo" height="51" width="37"/>
+                        <h4>CMO | Marta Garcia</h4>
+                    </div>
+                    <h3>Reorganización estructural de la web</h3>
+                    <time datetime="2025-10-30">30 de octubre de 2025</time>
+                    <p><strong>Categoría:</strong> Diseño & Estructura</p>
                 </div>
-                <h3>Reorganización estructural de la web</h3>
-                <time datetime="2025-10-30">30 de octubre de 2025</time>
-                <p><strong>Categoría:</strong> Diseño & Estructura</p>
-            </div>
-            <p>
-                CASH renueva por completo su estructura interna para mejorar el rendimiento y la accesibilidad del portal.
-                El nuevo diseño ofrece una navegación más fluida, integración de IA en el panel de usuario y optimización para dispositivos móviles.
-            </p>
-        </article>
-
-        <article>
-            <img src="assets/images/portada_ceo.png" alt="portada_ceo" height="305" width="595"/>
-            <div>
-                <div>
-                    <img src="assets/images/ceo.png" alt="ceo" height="51" width="37"/>
-                    <h4>CEO | Alvaro Torres</h4>
+                <p>
+                    CASH renueva por completo su estructura interna para mejorar el rendimiento y la accesibilidad del portal.
+                    El nuevo diseño ofrece una navegación más fluida, integración de IA en el panel de usuario y optimización para dispositivos móviles.
+                </p>
+            </article>
+    
+            <article class="directivos__post">
+                <img src="assets/images/portada_ceo.png" alt="portada_ceo" height="305" width="595"/>
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/ceo.png" alt="ceo" height="51" width="37"/>
+                        <h4>CEO | Alvaro Torres</h4>
+                    </div>
+                    <h3>¡Nuevo lanzamiento!</h3>
+                    <time datetime="2025-10-24">24 de octubre de 2025</time>
+                    <p><strong>Categoría:</strong> Tecnología & Comunicaciones</p>
                 </div>
-                <h3>¡Nuevo lanzamiento!</h3>
-                <time datetime="2025-10-24">24 de octubre de 2025</time>
-                <p><strong>Categoría:</strong> Tecnología & Comunicaciones</p>
-            </div>
-            <p>
-                Presentamos la nueva versión de la plataforma CASH 2.0, que incluye herramientas avanzadas de análisis financiero,
-                integración con bancos europeos y un sistema de recomendaciones personalizadas basado en inteligencia artificial.
-            </p>
-        </article>
-
-        <article>
-            <img src="assets/images/portada_seo.png" alt="portada_seo" height="299" width="596"/>
-            <div>
-                <div>
-                    <img src="assets/images/seo.png" alt="seo" height="51" width="37"/>
-                    <h4>SEO | Vladimir Kasparov</h4>
+                <p>
+                    Presentamos la nueva versión de la plataforma CASH 2.0, que incluye herramientas avanzadas de análisis financiero,
+                    integración con bancos europeos y un sistema de recomendaciones personalizadas basado en inteligencia artificial.
+                </p>
+            </article>
+    
+            <article class="directivos__post">
+                <img src="assets/images/portada_seo.png" alt="portada_seo" height="299" width="596"/>
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/seo.png" alt="seo" height="51" width="37"/>
+                        <h4>SEO | Vladimir Kasparov</h4>
+                    </div>
+                    <h3>Acuerdos con AWS, Azure y Google Cloud</h3>
+                    <time datetime="2025-11-19">19 de noviembre de 2025</time>
+                    <p><strong>Categoría:</strong> Relaciones Internacionales</p>
                 </div>
-                <h3>Acuerdos con AWS, Azure y Google Cloud</h3>
-                <time datetime="2025-11-19">19 de noviembre de 2025</time>
-                <p><strong>Categoría:</strong> Relaciones Internacionales</p>
-            </div>
-            <p>
-                CASH ha firmado acuerdos estratégicos con los principales proveedores de servicios en la nube, garantizando
-                una mayor disponibilidad, escalabilidad y seguridad de los datos de nuestros usuarios.
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Desarrolladores</h2>
-        <button>Suscribirse al boletín</button>
-
-        <article>
-            <div>
-                <div>
-                    <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
-                    <h4>DEV | John Smith</h4>
+                <p>
+                    CASH ha firmado acuerdos estratégicos con los principales proveedores de servicios en la nube, garantizando
+                    una mayor disponibilidad, escalabilidad y seguridad de los datos de nuestros usuarios.
+                </p>
+            </article>
+        </section>
+    
+        <section class="desarrolladores">
+            <article class="desarroladores__header">
+                <h2>Desarrolladores</h2>
+                <button>Suscribirse al boletín</button>
+            </article>
+    
+            <article class="desarrolladores__post">
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
+                        <h4>DEV | John Smith</h4>
+                    </div>
+                    <h3>Módulo en desarrollo</h3>
+                    <time datetime="2025-10-20">20 de octubre de 2025</time>
+                    <p><strong>Categoría:</strong> Tecnología</p>
                 </div>
-                <h3>Módulo en desarrollo</h3>
-                <time datetime="2025-10-20">20 de octubre de 2025</time>
-                <p><strong>Categoría:</strong> Tecnología</p>
-            </div>
-            <p>
-                Nuestro equipo de desarrollo está trabajando en un nuevo módulo de control de gastos predictivo,
-                basado en patrones de comportamiento y aprendizaje automático.
-            </p>
-        </article>
-
-        <article>
-            <div>
-                <div>
-                    <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
-                    <h4>DEV | Ashly Camelot</h4>
+                <p>
+                    Nuestro equipo de desarrollo está trabajando en un nuevo módulo de control de gastos predictivo,
+                    basado en patrones de comportamiento y aprendizaje automático.
+                </p>
+            </article>
+    
+            <article class="desarrolladores__post">
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
+                        <h4>DEV | Ashly Camelot</h4>
+                    </div>
+                    <h3>Complicaciones en el mantenimiento</h3>
+                    <time datetime="2025-11-19">19 de noviembre de 2025</time>
+                    <p><strong>Categoría:</strong> Mantenimiento</p>
                 </div>
-                <h3>Complicaciones en el mantenimiento</h3>
-                <time datetime="2025-11-19">19 de noviembre de 2025</time>
-                <p><strong>Categoría:</strong> Mantenimiento</p>
-            </div>
-            <p>
-                Durante la última semana se detectaron errores en la sincronización de datos con cuentas bancarias externas.
-                El equipo técnico ya ha desplegado un parche que soluciona el problema de forma definitiva.
-            </p>
-        </article>
-
-        <article>
-            <div>
-                <div>
-                    <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
-                    <h4>DEV | Ashly Camelot</h4>
+                <p>
+                    Durante la última semana se detectaron errores en la sincronización de datos con cuentas bancarias externas.
+                    El equipo técnico ya ha desplegado un parche que soluciona el problema de forma definitiva.
+                </p>
+            </article>
+    
+            <article class="desarrolladores__post">
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
+                        <h4>DEV | Ashly Camelot</h4>
+                    </div>
+                    <h3>Grandes avances en automatización</h3>
+                    <time datetime="2025-11-04">4 de noviembre de 2025</time>
+                    <p><strong>Categoría:</strong> Tecnología</p>
                 </div>
-                <h3>Grandes avances en automatización</h3>
-                <time datetime="2025-11-04">4 de noviembre de 2025</time>
-                <p><strong>Categoría:</strong> Tecnología</p>
-            </div>
-            <p>
-                Hemos mejorado nuestros sistemas de automatización interna, reduciendo un 40% los tiempos de carga y optimizando el uso de recursos del servidor.
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Diseñadores</h2>
-        <button>Suscribirse al boletín</button>
-
-        <article>
-            <div>
-                <div>
-                    <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
-                    <h4>Designer | Mario DePuccini</h4>
+                <p>
+                    Hemos mejorado nuestros sistemas de automatización interna, reduciendo un 40% los tiempos de carga y optimizando el uso de recursos del servidor.
+                </p>
+            </article>
+        </section>
+    
+        <section class="designers">
+            <article class="designers__header">
+                <h2>Diseñadores</h2>
+                <button>Suscribirse al boletín</button>
+            </article>
+    
+            <article class="designers__post">
+                <div class="post__container">
+                    <div class="container__autor">
+                        <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
+                        <h4>Designer | Mario DePuccini</h4>
+                    </div>
+                    <h3>Nuevo diseño UI</h3>
+                    <time datetime="2025-10-07">7 de octubre de 2025</time>
+                    <p><strong>Categoría:</strong>Interfaz</p>
                 </div>
-                <h3>Nuevo diseño UI</h3>
-                <time datetime="2025-10-07">7 de octubre de 2025</time>
-                <p><strong>Categoría:</strong>Interfaz</p>
-            </div>
-            <p>
-                Nuestro nuevo diseño de interfaz se centra en la simplicidad y accesibilidad, con colores más neutros, tipografías legibles y navegación intuitiva.
-            </p>
-        </article>
-
-        <article>
-            <div>
-                <div>
-                    <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
-                    <h4>Designer | Clara de la Fuente</h4>
+                <p>
+                    Nuestro nuevo diseño de interfaz se centra en la simplicidad y accesibilidad, con colores más neutros, tipografías legibles y navegación intuitiva.
+                </p>
+            </article>
+    
+            <article class="designers__post">
+                <div class="post__container">
+                    <div class="post__container">
+                        <img src="assets/images/perfil_generica.png" alt="perfil_generico" height="51" width="51"/>
+                        <h4>Designer | Clara de la Fuente</h4>
+                    </div>
+                    <h3>Reorganización estructural de la web</h3>
+                    <time datetime="2025-10-30">30 de octubre de 2025</time>
+                    <p><strong>Categoría:</strong> Diseño & Estructura</p>
                 </div>
-                <h3>Reorganización estructural de la web</h3>
-                <time datetime="2025-10-30">30 de octubre de 2025</time>
-                <p><strong>Categoría:</strong> Diseño & Estructura</p>
-            </div>
-            <p>
-                Clara nos comparte cómo se rediseñó el sitio web para mejorar la experiencia de usuario y adaptarse a los estándares de accesibilidad europeos.
-            </p>
-        </article>
-    </section>
-</main>
+                <p>
+                    Clara nos comparte cómo se rediseñó el sitio web para mejorar la experiencia de usuario y adaptarse a los estándares de accesibilidad europeos.
+                </p>
+            </article>
+        </section>
+    </main>
 
-<footer>
-    <hr>
-    <div>
-        <img src="assets/images/cash.png" alt="cash" width="100">        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">YouTube</a></li>
-        </ul>
-    </div>
+    <footer class="footer">
+        <section class="footer__redes">
+            <a href="index.html"><img src="assets/images/cash.png" alt="cash" width="125"></a>
+            <ul>
+                <li><a href="#"><img src="assets/images/icons/icons8-instagram-50.png" alt="Instagram" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-facebook-50.png" alt="Facebook" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-x-50.png" alt="X" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-linkedin-50.png" alt="LinkedIn" width="25"></a></li>
+                <li><a href="#"><img src="assets/images/icons/icons8-youtube-50.png" alt="YouTube" width="25"></a></li>
+            </ul>
+            <article class="footer__redes--text">
+                <span>&copy; 2025 CASH S.A.</span>
+                <span>Gonzalo Blanco Mosteiro | 1º DAW</span>
+                <span>Lenguaje de Marcas</span>
+            </article>
+        </section>
 
-    <div>
-        <ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="FAQ.html">Preguntas frecuentes</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="about.html">Nosotros</a></li>
-        </ul>
+        <section class="footer__info">
+            <article>
+                <h4>Recursos</h4>
+                <ul class="info__nav">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                </ul>
+            </article>
 
-        <ul>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos de uso</a></li>
-            <li><a href="#">Aviso legal</a></li>
-            <li><a href="#">Configuración de cookies</a></li>
-        </ul>
-    </div>
+            <article>
+                <h4>Politica</h4>
+                <ul class="info__burocracia">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Configuración de cookies</a></li>
+                </ul>
+            </article>
 
-    <p>&copy; 2025 CASH S.A. | Desarrollado por Gonzalo Blanco Mosteiro — 1º DAW | Lenguaje de Marcas</p>
-</footer>
-</body>
+            <article>
+                <h4>Comunidad</h4>
+                <ul class="info__burocracia">
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Normativa</a></li>
+                    <li><a href="#">Grupos de ayuda</a></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+    </body>
 </html>
