@@ -71,30 +71,30 @@
                     <label for="contactoNombre">Nombre:</label>
                     <input type="text" id="contactoNombre" name="nombre" placeholder="Tu nombre" required>
     
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+                    <label for="contactoApellidos">Apellidos:</label>
+                    <input type="text" id="contactoApellidos" name="apellidos" placeholder="Tus apellidos" required>
     
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com" required>
+                    <label for="contactoCorreo">Correo electrónico:</label>
+                    <input type="email" id="contactoCorreo" name="email" placeholder="ejemplo@correo.com" required>
     
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+                    <label for="contactoTelefono">Teléfono:</label>
+                    <input type="tel" id="contactoTelefono" name="telefono" placeholder="+34 600 000 000">
     
-                    <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" name="fecha_nacimiento">
+                    <label for="contactoFecha">Fecha de nacimiento:</label>
+                    <input type="date" id="contactoFecha" name="fecha_nacimiento">
     
                     <div>
                         <span>Género:</span>
-                        <label><input type="radio" name="genero" value="hombre"> Hombre</label>
-                        <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                        <label><input type="radio" id="contactoRadioH" name="genero" value="hombre"> Hombre</label>
+                        <label><input type="radio" id="contactoRadioM" name="genero" value="mujer"> Mujer</label>
                     </div>
                 </fieldset>
     
                 <fieldset>
                     <legend>Motivo del contacto</legend>
     
-                    <label for="asunto">Asunto:</label>
-                    <select id="asunto" name="asunto" required>
+                    <label for="contactoAsunto">Asunto:</label>
+                    <select id="contactoAsunto" name="asunto" required>
                         <option value="">Selecciona una opción</option>
                         <option value="sugerencia">Sugerencia</option>
                         <option value="problema_tecnico">Problema técnico</option>
@@ -102,8 +102,8 @@
                         <option value="otros">Otros</option>
                     </select>
     
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+                    <label for="contactoMensaje">Mensaje:</label>
+                    <textarea id="contactoMensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
                     <button type="submit">Enviar mensaje</button>
                 </fieldset>
             </form>
